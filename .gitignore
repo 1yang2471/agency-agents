@@ -1,0 +1,9 @@
+# 运行时角色 prompt 缓存（SKILL.md 缓存式同步产生）
+roles-cache/
+
+# Python 测试缓存
+__pycache__/
+*.pyc
+
+# 日志
+*.log

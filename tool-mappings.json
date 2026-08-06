@@ -1,0 +1,131 @@
+{
+  "_note": "任务关键词到候选部门/角色的映射。Skill 匹配算法（见 SKILL.md）：keywords_en 按英文词边界匹配（\\bkeyword\\b，大小写不敏感，自动兼容简单复数如 tests/servers），keywords_zh 按中文子串匹配。所有英文关键词统一小写。",
+  "mappings": [
+    {
+      "keywords_en": ["review", "code review", "pr", "pull request", "cr", "walkthrough"],
+      "keywords_zh": ["审查", "代码审查", "走查", "评审"],
+      "divisions": ["engineering", "security", "testing"],
+      "roles": ["code-reviewer", "application-security-engineer", "backend-architect"]
+    },
+    {
+      "keywords_en": ["ui", "css", "figma", "layout", "design", "frontend"],
+      "keywords_zh": ["界面", "页面", "组件", "视觉", "样式", "前端"],
+      "divisions": ["design", "engineering"],
+      "roles": ["ui-designer", "frontend-developer", "brand-guardian"]
+    },
+    {
+      "keywords_en": ["ux", "usability", "wireframe", "user research", "interaction"],
+      "keywords_zh": ["用户流程", "可用性", "用户研究", "用户体验", "交互", "用户旅程"],
+      "divisions": ["design", "product"],
+      "roles": ["ux-researcher", "ui-designer", "product-manager"]
+    },
+    {
+      "keywords_en": ["fix", "bug", "crash", "debug", "error"],
+      "keywords_zh": ["调试", "错误", "异常", "报错", "修复", "故障"],
+      "divisions": ["engineering", "testing"],
+      "roles": ["frontend-developer", "backend-architect", "test-automation-engineer", "evidence-collector"]
+    },
+    {
+      "keywords_en": ["security", "vulnerability", "threat", "xss", "sql injection", "penetration", "encryption", "authentication", "authorization", "audit"],
+      "keywords_zh": ["安全", "漏洞", "威胁", "审计", "渗透", "加密", "认证", "授权"],
+      "divisions": ["security", "engineering"],
+      "roles": ["application-security-engineer", "backend-architect", "code-reviewer", "compliance-auditor"]
+    },
+    {
+      "keywords_en": ["api", "backend", "database", "server", "microservice", "endpoint"],
+      "keywords_zh": ["后端", "数据库", "架构", "服务", "微服务", "接口", "服务端"],
+      "divisions": ["engineering"],
+      "roles": ["backend-architect", "api-tester", "application-security-engineer", "devops-automator"]
+    },
+    {
+      "keywords_en": ["growth", "conversion", "seo", "funnel", "retention", "marketing"],
+      "keywords_zh": ["增长", "转化", "内容", "营销", "获客", "漏斗", "留存", "推广"],
+      "divisions": ["marketing", "product"],
+      "roles": ["growth-hacker", "content-creator", "seo-specialist", "social-media-strategist"]
+    },
+    {
+      "keywords_en": ["test", "qa", "coverage", "regression", "automation"],
+      "keywords_zh": ["测试", "用例", "覆盖率", "自动化测试", "回归"],
+      "divisions": ["testing", "engineering"],
+      "roles": ["test-automation-engineer", "api-tester", "performance-benchmarker"]
+    },
+    {
+      "keywords_en": ["performance", "optimization", "latency", "load", "concurrency"],
+      "keywords_zh": ["性能", "负载", "优化", "慢", "卡顿", "高并发", "延迟"],
+      "divisions": ["engineering", "testing"],
+      "roles": ["performance-benchmarker", "backend-architect", "devops-automator", "sre-site-reliability-engineer"]
+    },
+    {
+      "keywords_en": ["devops", "pipeline", "docker", "kubernetes", "k8s", "ci", "deploy", "infrastructure"],
+      "keywords_zh": ["部署", "基础设施", "发布", "上线"],
+      "divisions": ["engineering"],
+      "roles": ["devops-automator", "backend-architect", "application-security-engineer", "sre-site-reliability-engineer"]
+    },
+    {
+      "keywords_en": ["agentic", "multi-agent", "orchestration", "workflow", "mcp", "skill", "prompt engineering"],
+      "keywords_zh": ["agent 编排", "多 agent", "编排", "提示词", "prompt 工程", "智能体"],
+      "divisions": ["specialized", "engineering"],
+      "roles": ["agents-orchestrator", "mcp-builder", "prompt-engineer", "backend-architect"]
+    },
+    {
+      "keywords_en": ["product", "roadmap", "prd", "user story", "feature"],
+      "keywords_zh": ["产品", "需求", "优先级", "用户故事", "需求文档"],
+      "divisions": ["product", "design"],
+      "roles": ["product-manager", "ux-researcher", "growth-hacker"]
+    },
+    {
+      "keywords_en": ["project", "jira", "sprint", "milestone", "risk"],
+      "keywords_zh": ["项目", "进度", "排期", "迭代", "风险", "交付"],
+      "divisions": ["project-management", "product"],
+      "roles": ["project-shepherd", "jira-workflow-steward", "product-manager"]
+    },
+    {
+      "keywords_en": ["helpdesk", "ticket", "support", "complaint"],
+      "keywords_zh": ["客服", "支持", "工单", "投诉", "售后"],
+      "divisions": ["support"],
+      "roles": ["support-responder", "customer-service"]
+    },
+    {
+      "keywords_en": ["game", "unity", "unreal", "gameplay", "level design"],
+      "keywords_zh": ["游戏", "关卡", "玩法", "游戏设计"],
+      "divisions": ["game-development"],
+      "roles": ["game-designer", "technical-artist"]
+    },
+    {
+      "keywords_en": ["finance", "investment", "valuation", "financial", "reporting"],
+      "keywords_zh": ["财务", "金融", "投资", "估值", "财报", "财务模型", "融资"],
+      "divisions": ["finance"],
+      "roles": ["financial-analyst"]
+    },
+    {
+      "keywords_en": ["healthcare", "clinical", "hipaa", "medical"],
+      "keywords_zh": ["医疗", "健康", "临床", "合规"],
+      "divisions": ["healthcare"],
+      "roles": ["healthcare-marketing-compliance-specialist"]
+    },
+    {
+      "keywords_en": ["research", "paper", "anthropology", "psychology", "academic"],
+      "keywords_zh": ["学术", "研究", "论文", "人类学", "心理学", "科研"],
+      "divisions": ["academic"],
+      "roles": ["anthropologist", "psychologist"]
+    },
+    {
+      "keywords_en": ["strategy", "competitive", "roadmap"],
+      "keywords_zh": ["战略", "竞争", "战略咨询", "路线图"],
+      "divisions": ["strategy"],
+      "roles": ["business-strategist"]
+    },
+    {
+      "keywords_en": ["refactor", "migration", "legacy"],
+      "keywords_zh": ["重构", "迁移", "改造", "遗留代码"],
+      "divisions": ["engineering", "testing"],
+      "roles": ["backend-architect", "code-reviewer", "test-automation-engineer"]
+    },
+    {
+      "keywords_en": ["documentation", "docs", "readme"],
+      "keywords_zh": ["文档", "说明", "教程", "使用手册"],
+      "divisions": ["engineering"],
+      "roles": ["technical-writer", "frontend-developer", "code-reviewer"]
+    }
+  ]
+}

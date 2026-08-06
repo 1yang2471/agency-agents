@@ -1,0 +1,1402 @@
+{
+    "_note":  "自动生成：由 sync.ps1 从上游 msitarzewski/agency-agents 重建，勿手改。中文名/简介由 zh-overrides.json 覆盖提供。",
+    "source":  "C:\\Users\\abc\\AppData\\Local\\Temp\\agency-agents-upstream",
+    "last_updated":  "2026-08-06",
+    "upstream_sha":  "c89557f78509868c6d4cc08e5cbc79bc8625fe1c",
+    "divisions":  {
+                      "academic":  {
+                                       "label":  "Academic",
+                                       "icon":  "GraduationCap",
+                                       "color":  "#8B5CF6",
+                                       "roles":  [
+                                                     {
+                                                         "slug":  "anthropologist",
+                                                         "name":  "人类学家",
+                                                         "brief":  "负责文化、社会与人类行为分析"
+                                                     },
+                                                     {
+                                                         "slug":  "geographer",
+                                                         "name":  "Geographer",
+                                                         "brief":  "Expert in physical and human geography, climate systems, cartography, and spatial analysis — builds "
+                                                     },
+                                                     {
+                                                         "slug":  "historian",
+                                                         "name":  "Historian",
+                                                         "brief":  "Expert in historical analysis, periodization, material culture, and historiography — validates histo"
+                                                     },
+                                                     {
+                                                         "slug":  "narratologist",
+                                                         "name":  "Narratologist",
+                                                         "brief":  "Expert in narrative theory, story structure, character arcs, and literary analysis — grounds advice "
+                                                     },
+                                                     {
+                                                         "slug":  "psychologist",
+                                                         "name":  "心理学家",
+                                                         "brief":  "负责认知、行为与心理机制分析"
+                                                     },
+                                                     {
+                                                         "slug":  "statistician",
+                                                         "name":  "Statistician",
+                                                         "brief":  "Expert in quantitative research methodology, experimental design, and statistical inference — pressu"
+                                                     }
+                                                 ]
+                                   },
+                      "design":  {
+                                     "label":  "Design",
+                                     "icon":  "PenTool",
+                                     "color":  "#EC4899",
+                                     "roles":  [
+                                                   {
+                                                       "slug":  "brand-guardian",
+                                                       "name":  "品牌守护者",
+                                                       "brief":  "负责品牌一致性、视觉语言与文案调性"
+                                                   },
+                                                   {
+                                                       "slug":  "image-prompt-engineer",
+                                                       "name":  "Image Prompt Engineer",
+                                                       "brief":  "Expert photography prompt engineer specializing in crafting detailed, evocative prompts for AI image"
+                                                   },
+                                                   {
+                                                       "slug":  "inclusive-visuals-specialist",
+                                                       "name":  "Inclusive Visuals Specialist",
+                                                       "brief":  "Representation expert who defeats systemic AI biases to generate culturally accurate, affirming, and"
+                                                   },
+                                                   {
+                                                       "slug":  "persona-walkthrough-specialist",
+                                                       "name":  "Persona Walkthrough Specialist",
+                                                       "brief":  "Simulate cognitive walkthroughs of web pages from a defined persona\u0027s psychological perspective — ca"
+                                                   },
+                                                   {
+                                                       "slug":  "ui-designer",
+                                                       "name":  "UI 设计师",
+                                                       "brief":  "负责界面布局、视觉层次与组件选择"
+                                                   },
+                                                   {
+                                                       "slug":  "ui-finish-gate-reviewer",
+                                                       "name":  "UI Finish-Gate Reviewer",
+                                                       "brief":  "Product-interface reviewer who catches generic, interchangeable UI before it ships by grounding crit"
+                                                   },
+                                                   {
+                                                       "slug":  "ux-architect",
+                                                       "name":  "UX Architect",
+                                                       "brief":  "Technical architecture and UX specialist who provides developers with solid foundations, CSS systems"
+                                                   },
+                                                   {
+                                                       "slug":  "ux-researcher",
+                                                       "name":  "UX 研究员",
+                                                       "brief":  "负责用户流程、可用性研究与测试"
+                                                   },
+                                                   {
+                                                       "slug":  "visual-storyteller",
+                                                       "name":  "Visual Storyteller",
+                                                       "brief":  "Expert visual communication specialist focused on creating compelling visual narratives, multimedia "
+                                                   },
+                                                   {
+                                                       "slug":  "whimsy-injector",
+                                                       "name":  "Whimsy Injector",
+                                                       "brief":  "Expert creative specialist focused on adding personality, delight, and playful elements to brand exp"
+                                                   }
+                                               ]
+                                 },
+                      "engineering":  {
+                                          "label":  "Engineering",
+                                          "icon":  "Code",
+                                          "color":  "#3B82F6",
+                                          "roles":  [
+                                                        {
+                                                            "slug":  "ai-data-remediation-engineer",
+                                                            "name":  "AI Data Remediation Engineer",
+                                                            "brief":  "\"Specialist in self-healing data pipelines — uses air-gapped local SLMs and semantic clustering to a"
+                                                        },
+                                                        {
+                                                            "slug":  "ai-engineer",
+                                                            "name":  "AI 工程师",
+                                                            "brief":  "负责模型集成、Prompt 工程与 AI 功能实现"
+                                                        },
+                                                        {
+                                                            "slug":  "api-platform-engineer",
+                                                            "name":  "API Platform Engineer",
+                                                            "brief":  "Expert API platform engineer for public and partner APIs — contract-first design (OpenAPI/gRPC), ver"
+                                                        },
+                                                        {
+                                                            "slug":  "autonomous-optimization-architect",
+                                                            "name":  "Autonomous Optimization Architect",
+                                                            "brief":  "Intelligent system governor that continuously shadow-tests APIs for performance while enforcing stri"
+                                                        },
+                                                        {
+                                                            "slug":  "backend-architect",
+                                                            "name":  "后端架构师",
+                                                            "brief":  "负责 API 设计、数据流与服务边界"
+                                                        },
+                                                        {
+                                                            "slug":  "cms-developer",
+                                                            "name":  "CMS Developer",
+                                                            "brief":  "Drupal and WordPress specialist for theme development, custom plugins/modules, content architecture,"
+                                                        },
+                                                        {
+                                                            "slug":  "codebase-onboarding-engineer",
+                                                            "name":  "Codebase Onboarding Engineer",
+                                                            "brief":  "Expert developer onboarding specialist who helps new engineers understand unfamiliar codebases fast "
+                                                        },
+                                                        {
+                                                            "slug":  "code-reviewer",
+                                                            "name":  "代码审查员",
+                                                            "brief":  "负责代码质量、测试覆盖与可维护性审查"
+                                                        },
+                                                        {
+                                                            "slug":  "database-optimizer",
+                                                            "name":  "Database Optimizer",
+                                                            "brief":  "Expert database specialist focusing on schema design, query optimization, indexing strategies, and p"
+                                                        },
+                                                        {
+                                                            "slug":  "database-reliability-engineer",
+                                                            "name":  "Database Reliability Engineer",
+                                                            "brief":  "Expert database reliability engineer (DBRE) — high availability and replication, automated failover,"
+                                                        },
+                                                        {
+                                                            "slug":  "data-engineer",
+                                                            "name":  "Data Engineer",
+                                                            "brief":  "Expert data engineer specializing in building reliable data pipelines, lakehouse architectures, and "
+                                                        },
+                                                        {
+                                                            "slug":  "data-visualization-engineer",
+                                                            "name":  "Data Visualization Engineer",
+                                                            "brief":  "Expert data visualization engineer — chart-type selection by data and question, perceptually honest "
+                                                        },
+                                                        {
+                                                            "slug":  "desktop-app-engineer",
+                                                            "name":  "Desktop App Engineer",
+                                                            "brief":  "Expert desktop application engineer for Electron and Tauri — secure IPC and process isolation, code "
+                                                        },
+                                                        {
+                                                            "slug":  "developer-tooling-engineer",
+                                                            "name":  "Developer Tooling Engineer",
+                                                            "brief":  "Expert developer-tooling and CLI engineer — building command-line tools and internal developer platf"
+                                                        },
+                                                        {
+                                                            "slug":  "devops-automator",
+                                                            "name":  "DevOps 自动化工程师",
+                                                            "brief":  "负责基础设施自动化、CI/CD 与部署"
+                                                        },
+                                                        {
+                                                            "slug":  "drupal-performance-engineer",
+                                                            "name":  "Drupal Performance Engineer",
+                                                            "brief":  "Expert Drupal 10/11 performance engineer specializing in Core Web Vitals, render and dynamic page ca"
+                                                        },
+                                                        {
+                                                            "slug":  "drupal-shopping-cart-engineer",
+                                                            "name":  "Drupal Shopping Cart Engineer",
+                                                            "brief":  "Expert Drupal e-commerce engineer specializing in Drupal Commerce for product catalog management, pa"
+                                                        },
+                                                        {
+                                                            "slug":  "email-intelligence-engineer",
+                                                            "name":  "Email Intelligence Engineer",
+                                                            "brief":  "Expert in extracting structured, reasoning-ready data from raw email threads for AI agents and autom"
+                                                        },
+                                                        {
+                                                            "slug":  "embedded-firmware-engineer",
+                                                            "name":  "Embedded Firmware Engineer",
+                                                            "brief":  "Specialist in bare-metal and RTOS firmware - ESP32/ESP-IDF, PlatformIO, Arduino, ARM Cortex-M, STM32"
+                                                        },
+                                                        {
+                                                            "slug":  "feishu-integration-developer",
+                                                            "name":  "Feishu Integration Developer",
+                                                            "brief":  "Full-stack integration expert specializing in the Feishu (Lark) Open Platform — proficient in Feishu"
+                                                        },
+                                                        {
+                                                            "slug":  "filament-optimization-specialist",
+                                                            "name":  "Filament Optimization Specialist",
+                                                            "brief":  "Expert in restructuring and optimizing Filament PHP admin interfaces for maximum usability and effic"
+                                                        },
+                                                        {
+                                                            "slug":  "finops-engineer",
+                                                            "name":  "FinOps Engineer",
+                                                            "brief":  "Expert cloud cost engineer for AWS/GCP/Azure — cost allocation and tagging, rightsizing, commitment "
+                                                        },
+                                                        {
+                                                            "slug":  "frontend-developer",
+                                                            "name":  "前端开发",
+                                                            "brief":  "负责 UI 实现、组件开发与前端架构"
+                                                        },
+                                                        {
+                                                            "slug":  "gaussdb-expert-engineer",
+                                                            "name":  "GaussDB Expert Engineer",
+                                                            "brief":  "Expert database specialist focusing on GaussDB OLTP — Huawei\u0027s self-developed enterprise-grade relat"
+                                                        },
+                                                        {
+                                                            "slug":  "git-workflow-master",
+                                                            "name":  "Git Workflow Master",
+                                                            "brief":  "Expert in Git workflows, branching strategies, and version control best practices including conventi"
+                                                        },
+                                                        {
+                                                            "slug":  "identity-access-engineer",
+                                                            "name":  "Identity \u0026 Access Engineer",
+                                                            "brief":  "Expert identity engineer for OAuth 2.0/OIDC flows, enterprise SSO (SAML/OIDC) and SCIM provisioning,"
+                                                        },
+                                                        {
+                                                            "slug":  "incident-response-commander",
+                                                            "name":  "Incident Response Commander",
+                                                            "brief":  "Expert incident commander specializing in production incident management, structured response coordi"
+                                                        },
+                                                        {
+                                                            "slug":  "internationalization-engineer",
+                                                            "name":  "Internationalization Engineer",
+                                                            "brief":  "Expert i18n engineer for ICU MessageFormat, CLDR plural rules, RTL and bidirectional layouts, locale"
+                                                        },
+                                                        {
+                                                            "slug":  "iot-fleet-engineer",
+                                                            "name":  "IoT Fleet Engineer",
+                                                            "brief":  "Expert IoT and edge fleet engineer — device provisioning and identity, MQTT/telemetry pipelines, sta"
+                                                        },
+                                                        {
+                                                            "slug":  "it-service-manager",
+                                                            "name":  "IT Service Manager",
+                                                            "brief":  "Expert IT service management specialist using ITIL 4 framework for service catalog design, incident "
+                                                        },
+                                                        {
+                                                            "slug":  "llm-post-training-engineer",
+                                                            "name":  "LLM Post-Training Engineer",
+                                                            "brief":  "Evidence-driven owner for SFT, preference optimization, RLHF/RLVR, MoE post-training, and the releas"
+                                                        },
+                                                        {
+                                                            "slug":  "minimal-change-engineer",
+                                                            "name":  "Minimal Change Engineer",
+                                                            "brief":  "Engineering specialist focused on minimum-viable diffs — fixes only what was asked, refuses scope cr"
+                                                        },
+                                                        {
+                                                            "slug":  "mobile-app-builder",
+                                                            "name":  "Mobile App Builder",
+                                                            "brief":  "Specialized mobile application developer with expertise in native iOS/Android development and cross-"
+                                                        },
+                                                        {
+                                                            "slug":  "mobile-release-engineer",
+                                                            "name":  "Mobile Release Engineer",
+                                                            "brief":  "Expert mobile release and distribution engineer for iOS and Android — code signing, provisioning, fa"
+                                                        },
+                                                        {
+                                                            "slug":  "multi-agent-systems-architect",
+                                                            "name":  "Multi-Agent Systems Architect",
+                                                            "brief":  "Systems architect specializing in the design, coordination, and governance of multi-agent AI pipelin"
+                                                        },
+                                                        {
+                                                            "slug":  "network-engineer",
+                                                            "name":  "Network Engineer",
+                                                            "brief":  "Expert network engineer for Cisco IOS/IOS-XE, Cisco ASA/FTD, Juniper Junos, and Palo Alto PAN-OS rou"
+                                                        },
+                                                        {
+                                                            "slug":  "orgscript-engineer",
+                                                            "name":  "OrgScript Engineer",
+                                                            "brief":  "Expert in designing, parsing, and implementing OrgScript grammar, AST validation, and business logic"
+                                                        },
+                                                        {
+                                                            "slug":  "payments-billing-engineer",
+                                                            "name":  "Payments \u0026 Billing Engineer",
+                                                            "brief":  "Expert payments engineer for PSP integrations (Stripe, Adyen, Braintree, PayPal), idempotent payment"
+                                                        },
+                                                        {
+                                                            "slug":  "privacy-engineer",
+                                                            "name":  "Privacy Engineer",
+                                                            "brief":  "Expert privacy engineer who implements privacy in code — PII discovery and classification, data mini"
+                                                        },
+                                                        {
+                                                            "slug":  "prompt-engineer",
+                                                            "name":  "Prompt 工程师",
+                                                            "brief":  "负责提示词设计、评估与优化"
+                                                        },
+                                                        {
+                                                            "slug":  "rag-pipeline-engineer",
+                                                            "name":  "RAG Pipeline Engineer",
+                                                            "brief":  "Production RAG specialist focused on chunking strategy, retrieval quality, hybrid search, re-ranking"
+                                                        },
+                                                        {
+                                                            "slug":  "rapid-prototyper",
+                                                            "name":  "Rapid Prototyper",
+                                                            "brief":  "Specialized in ultra-fast proof-of-concept development and MVP creation using efficient tools and fr"
+                                                        },
+                                                        {
+                                                            "slug":  "realtime-collaboration-engineer",
+                                                            "name":  "Realtime Collaboration Engineer",
+                                                            "brief":  "Expert realtime systems engineer for WebSocket/SSE infrastructure, presence, CRDT and OT-based colla"
+                                                        },
+                                                        {
+                                                            "slug":  "rust-refactoring-specialist",
+                                                            "name":  "Rust Refactoring Specialist",
+                                                            "brief":  "Expert Rust engineer for repository-scale refactoring, safe renames, module restructuring, duplicati"
+                                                        },
+                                                        {
+                                                            "slug":  "search-relevance-engineer",
+                                                            "name":  "Search Relevance Engineer",
+                                                            "brief":  "Expert search engineer for Elasticsearch and OpenSearch — index and analyzer design, BM25 query tuni"
+                                                        },
+                                                        {
+                                                            "slug":  "section-508-accessibility-specialist",
+                                                            "name":  "Section 508 Accessibility Specialist",
+                                                            "brief":  "Expert U.S. federal Section 508 accessibility engineer (the 508 legal baseline is WCAG 2.0 Level AA;"
+                                                        },
+                                                        {
+                                                            "slug":  "senior-developer",
+                                                            "name":  "Senior Developer",
+                                                            "brief":  "Premium implementation specialist - Masters Laravel/Livewire/FluxUI, advanced CSS, Three.js integrat"
+                                                        },
+                                                        {
+                                                            "slug":  "software-architect",
+                                                            "name":  "Software Architect",
+                                                            "brief":  "Expert software architect specializing in system design, domain-driven design, architectural pattern"
+                                                        },
+                                                        {
+                                                            "slug":  "solidity-smart-contract-engineer",
+                                                            "name":  "Solidity Smart Contract Engineer",
+                                                            "brief":  "Expert Solidity developer specializing in EVM smart contract architecture, gas optimization, upgrade"
+                                                        },
+                                                        {
+                                                            "slug":  "sre-site-reliability-engineer",
+                                                            "name":  "SRE",
+                                                            "brief":  "负责系统可靠性、监控与故障响应"
+                                                        },
+                                                        {
+                                                            "slug":  "technical-writer",
+                                                            "name":  "技术文档工程师",
+                                                            "brief":  "负责技术文档、说明与使用手册编写"
+                                                        },
+                                                        {
+                                                            "slug":  "uswds-developer",
+                                                            "name":  "USWDS Developer",
+                                                            "brief":  "Expert U.S. Web Design System frontend developer specializing in USWDS components and design tokens,"
+                                                        },
+                                                        {
+                                                            "slug":  "video-streaming-engineer",
+                                                            "name":  "Video Streaming Engineer",
+                                                            "brief":  "Expert video streaming engineer for adaptive bitrate delivery — HLS/DASH packaging, ffmpeg transcode"
+                                                        },
+                                                        {
+                                                            "slug":  "voice-ai-integration-engineer",
+                                                            "name":  "Voice AI Integration Engineer",
+                                                            "brief":  "Expert in building end-to-end speech transcription pipelines using Whisper-style models and cloud AS"
+                                                        },
+                                                        {
+                                                            "slug":  "webassembly-engineer",
+                                                            "name":  "WebAssembly Engineer",
+                                                            "brief":  "Expert WebAssembly engineer — compiling Rust/C++/Go to Wasm, JS interop and the boundary marshalling"
+                                                        },
+                                                        {
+                                                            "slug":  "wechat-mini-program-developer",
+                                                            "name":  "WeChat Mini Program Developer",
+                                                            "brief":  "Expert WeChat Mini Program developer specializing in 小程序 development with WXML/WXSS/WXS, WeChat API "
+                                                        },
+                                                        {
+                                                            "slug":  "wordpress-performance-engineer",
+                                                            "name":  "WordPress Performance Engineer",
+                                                            "brief":  "Expert WordPress performance engineer specializing in Core Web Vitals, object caching (Redis/Memcach"
+                                                        },
+                                                        {
+                                                            "slug":  "wordpress-shopping-cart-engineer",
+                                                            "name":  "WordPress Shopping Cart Engineer",
+                                                            "brief":  "Expert WordPress e-commerce engineer specializing in WooCommerce for product catalog management, pay"
+                                                        }
+                                                    ]
+                                      },
+                      "finance":  {
+                                      "label":  "Finance",
+                                      "icon":  "DollarSign",
+                                      "color":  "#22C55E",
+                                      "roles":  [
+                                                    {
+                                                        "slug":  "bookkeeper-controller",
+                                                        "name":  "Bookkeeper \u0026 Controller",
+                                                        "brief":  "Expert bookkeeper and controller specializing in day-to-day accounting operations, financial reconci"
+                                                    },
+                                                    {
+                                                        "slug":  "financial-analyst",
+                                                        "name":  "金融分析师",
+                                                        "brief":  "负责财务建模、指标分析与投资评估"
+                                                    },
+                                                    {
+                                                        "slug":  "fp-a-analyst",
+                                                        "name":  "FP\u0026A Analyst",
+                                                        "brief":  "Expert Financial Planning \u0026 Analysis (FP\u0026A) analyst specializing in budgeting, variance analysis, fi"
+                                                    },
+                                                    {
+                                                        "slug":  "investment-researcher",
+                                                        "name":  "Investment Researcher",
+                                                        "brief":  "Expert investment researcher specializing in market research, due diligence, portfolio analysis, and"
+                                                    },
+                                                    {
+                                                        "slug":  "tax-strategist",
+                                                        "name":  "Tax Strategist",
+                                                        "brief":  "Expert tax strategist specializing in tax optimization, multi-jurisdictional compliance, transfer pr"
+                                                    }
+                                                ]
+                                  },
+                      "game-development":  {
+                                               "label":  "Game Development",
+                                               "icon":  "Gamepad2",
+                                               "color":  "#A855F7",
+                                               "roles":  [
+                                                             {
+                                                                 "slug":  "economy-designer",
+                                                                 "name":  "Economy Designer",
+                                                                 "brief":  "Virtual economy architect - Masters currency systems, sources and sinks, monetization modeling, infl"
+                                                             },
+                                                             {
+                                                                 "slug":  "game-audio-engineer",
+                                                                 "name":  "Game Audio Engineer",
+                                                                 "brief":  "Interactive audio specialist - Masters FMOD/Wwise integration, adaptive music systems, spatial audio"
+                                                             },
+                                                             {
+                                                                 "slug":  "game-designer",
+                                                                 "name":  "游戏设计师",
+                                                                 "brief":  "负责玩法机制、关卡与经济系统设计"
+                                                             },
+                                                             {
+                                                                 "slug":  "level-designer",
+                                                                 "name":  "Level Designer",
+                                                                 "brief":  "Spatial storytelling and flow specialist - Masters layout theory, pacing architecture, encounter des"
+                                                             },
+                                                             {
+                                                                 "slug":  "narrative-designer",
+                                                                 "name":  "Narrative Designer",
+                                                                 "brief":  "Story systems and dialogue architect - Masters GDD-aligned narrative design, branching dialogue, lor"
+                                                             },
+                                                             {
+                                                                 "slug":  "technical-artist",
+                                                                 "name":  "技术美术",
+                                                                 "brief":  "负责美术到引擎的管线与技术实现"
+                                                             }
+                                                         ]
+                                           },
+                      "gis":  {
+                                  "label":  "GIS",
+                                  "icon":  "Map",
+                                  "color":  "#14B8A6",
+                                  "roles":  [
+                                                {
+                                                    "slug":  "3d-scene-developer",
+                                                    "name":  "3D \u0026 Scene Developer",
+                                                    "brief":  "Web 3D visualization specialist who creates immersive 3D scenes, terrain models, point cloud visuali"
+                                                },
+                                                {
+                                                    "slug":  "bim-gis-specialist",
+                                                    "name":  "BIM/GIS Specialist",
+                                                    "brief":  "Integration specialist who bridges Building Information Modeling and Geographic Information Systems "
+                                                },
+                                                {
+                                                    "slug":  "cartography-designer",
+                                                    "name":  "Cartography Designer",
+                                                    "brief":  "Map aesthetics specialist who designs beautiful, readable, and effective maps — color theory, typogr"
+                                                },
+                                                {
+                                                    "slug":  "drone-reality-mapping-specialist",
+                                                    "name":  "Drone/Reality Mapping Specialist",
+                                                    "brief":  "Photogrammetry and reality capture expert who processes drone imagery into orthomosaics, digital ter"
+                                                },
+                                                {
+                                                    "slug":  "geoai-ml-engineer",
+                                                    "name":  "GeoAI/ML Engineer",
+                                                    "brief":  "Geospatial machine learning specialist who builds models for feature extraction, object detection, i"
+                                                },
+                                                {
+                                                    "slug":  "geoprocessing-specialist",
+                                                    "name":  "Geoprocessing Specialist",
+                                                    "brief":  "ArcPy and Python toolbox expert who automates spatial workflows — builds .pyt toolboxes, Model Build"
+                                                },
+                                                {
+                                                    "slug":  "gis-analyst",
+                                                    "name":  "GIS Analyst",
+                                                    "brief":  "Day-to-day GIS operator who creates maps, manages layers, performs spatial queries, and maintains ge"
+                                                },
+                                                {
+                                                    "slug":  "gis-qa-engineer",
+                                                    "name":  "GIS QA Engineer",
+                                                    "brief":  "Quality assurance specialist who validates geospatial data integrity — topology checks, metadata aud"
+                                                },
+                                                {
+                                                    "slug":  "solution-engineer",
+                                                    "name":  "Solution Engineer",
+                                                    "brief":  "Hands-on GIS prototype builder who takes strategy from Technical Consultant and turns it into workin"
+                                                },
+                                                {
+                                                    "slug":  "spatial-data-engineer",
+                                                    "name":  "Spatial Data Engineer",
+                                                    "brief":  "ETL specialist who transforms messy geospatial data from any source into clean, standardized, produc"
+                                                },
+                                                {
+                                                    "slug":  "spatial-data-scientist",
+                                                    "name":  "Spatial Data Scientist",
+                                                    "brief":  "Advanced spatial analytics specialist who applies statistical modeling, spatial econometrics, cluste"
+                                                },
+                                                {
+                                                    "slug":  "technical-consultant",
+                                                    "name":  "Technical Consultant",
+                                                    "brief":  "Strategic GIS advisor who translates business problems into geospatial solutions — gap analysis, tec"
+                                                },
+                                                {
+                                                    "slug":  "web-gis-developer",
+                                                    "name":  "Web GIS Developer",
+                                                    "brief":  "Full-stack web GIS engineer who builds interactive mapping applications — MapLibre GL JS, ArcGIS JS "
+                                                }
+                                            ]
+                              },
+                      "healthcare":  {
+                                         "label":  "Healthcare",
+                                         "icon":  "Stethoscope",
+                                         "color":  "#0D9488",
+                                         "roles":  [
+                                                       {
+                                                           "slug":  "clinical-evidence-agent",
+                                                           "name":  "Clinical Evidence Agent",
+                                                           "brief":  "Evidence standards and clinical credibility framework for AI agents"
+                                                       },
+                                                       {
+                                                           "slug":  "healthcare-innovation-strategist",
+                                                           "name":  "Healthcare Innovation Strategist",
+                                                           "brief":  "Strategic narrative architect for healthcare founders operating at"
+                                                       },
+                                                       {
+                                                           "slug":  "sovereign-health-systems-agent",
+                                                           "name":  "Sovereign Health Systems Agent",
+                                                           "brief":  "Government health mandate engagement framework for AI agents"
+                                                       }
+                                                   ]
+                                     },
+                      "marketing":  {
+                                        "label":  "Marketing",
+                                        "icon":  "Megaphone",
+                                        "color":  "#F97316",
+                                        "roles":  [
+                                                      {
+                                                          "slug":  "aeo-foundations-architect",
+                                                          "name":  "AEO Foundations Architect",
+                                                          "brief":  "Expert in AI Engine Optimization infrastructure — implements llms.txt, AI-aware robots.txt, token-bu"
+                                                      },
+                                                      {
+                                                          "slug":  "agentic-search-optimizer",
+                                                          "name":  "Agentic Search Optimizer",
+                                                          "brief":  "Expert in WebMCP readiness and agentic task completion — audits whether AI agents can actually accom"
+                                                      },
+                                                      {
+                                                          "slug":  "ai-citation-strategist",
+                                                          "name":  "AI Citation Strategist",
+                                                          "brief":  "Expert in AI recommendation engine optimization (AEO/GEO) — audits brand visibility across ChatGPT, "
+                                                      },
+                                                      {
+                                                          "slug":  "app-store-optimizer",
+                                                          "name":  "App Store Optimizer",
+                                                          "brief":  "Expert app store marketing specialist focused on App Store Optimization (ASO), conversion rate optim"
+                                                      },
+                                                      {
+                                                          "slug":  "baidu-seo-specialist",
+                                                          "name":  "Baidu SEO Specialist",
+                                                          "brief":  "Expert Baidu search optimization specialist focused on Chinese search engine ranking, Baidu ecosyste"
+                                                      },
+                                                      {
+                                                          "slug":  "bilibili-content-strategist",
+                                                          "name":  "Bilibili Content Strategist",
+                                                          "brief":  "Expert Bilibili marketing specialist focused on UP主 growth, danmaku culture mastery, B站 algorithm op"
+                                                      },
+                                                      {
+                                                          "slug":  "book-co-author",
+                                                          "name":  "Book Co-Author",
+                                                          "brief":  "Strategic thought-leadership book collaborator for founders, experts, and operators turning voice no"
+                                                      },
+                                                      {
+                                                          "slug":  "carousel-growth-engine",
+                                                          "name":  "Carousel Growth Engine",
+                                                          "brief":  "Autonomous TikTok and Instagram carousel generation specialist. Analyzes any website URL with Playwr"
+                                                      },
+                                                      {
+                                                          "slug":  "china-e-commerce-operator",
+                                                          "name":  "China E-Commerce Operator",
+                                                          "brief":  "Expert China e-commerce operations specialist covering Taobao, Tmall, Pinduoduo, and JD ecosystems w"
+                                                      },
+                                                      {
+                                                          "slug":  "china-market-localization-strategist",
+                                                          "name":  "China Market Localization Strategist",
+                                                          "brief":  "Full-stack China market localization expert who transforms real-time trend signals into executable g"
+                                                      },
+                                                      {
+                                                          "slug":  "content-creator",
+                                                          "name":  "内容创作者",
+                                                          "brief":  "负责文案、内容策略与多平台适配"
+                                                      },
+                                                      {
+                                                          "slug":  "cross-border-e-commerce-specialist",
+                                                          "name":  "Cross-Border E-Commerce Specialist",
+                                                          "brief":  "Full-funnel cross-border e-commerce strategist covering Amazon, Shopee, Lazada, AliExpress, Temu, an"
+                                                      },
+                                                      {
+                                                          "slug":  "douyin-strategist",
+                                                          "name":  "Douyin Strategist",
+                                                          "brief":  "Short-video marketing expert specializing in the Douyin platform, with deep expertise in recommendat"
+                                                      },
+                                                      {
+                                                          "slug":  "email-marketing-strategist",
+                                                          "name":  "Email Marketing Strategist",
+                                                          "brief":  "Expert email marketing strategist for CRM-driven campaigns, lifecycle automation, segmentation archi"
+                                                      },
+                                                      {
+                                                          "slug":  "global-podcast-strategist",
+                                                          "name":  "Global Podcast Strategist",
+                                                          "brief":  "Expert podcast growth specialist focused on show positioning, audience development, content strategy"
+                                                      },
+                                                      {
+                                                          "slug":  "growth-hacker",
+                                                          "name":  "增长黑客",
+                                                          "brief":  "负责增长实验、转化优化与数据驱动决策"
+                                                      },
+                                                      {
+                                                          "slug":  "instagram-curator",
+                                                          "name":  "Instagram Curator",
+                                                          "brief":  "Expert Instagram marketing specialist focused on visual storytelling, community building, and multi-"
+                                                      },
+                                                      {
+                                                          "slug":  "kuaishou-strategist",
+                                                          "name":  "Kuaishou Strategist",
+                                                          "brief":  "Expert Kuaishou marketing strategist specializing in short-video content for China\u0027s lower-tier city"
+                                                      },
+                                                      {
+                                                          "slug":  "linkedin-content-creator",
+                                                          "name":  "LinkedIn Content Creator",
+                                                          "brief":  "Expert LinkedIn content strategist focused on thought leadership, personal brand building, and high-"
+                                                      },
+                                                      {
+                                                          "slug":  "livestream-commerce-coach",
+                                                          "name":  "Livestream Commerce Coach",
+                                                          "brief":  "Veteran livestream e-commerce coach specializing in host training and live room operations across Do"
+                                                      },
+                                                      {
+                                                          "slug":  "multi-platform-publisher",
+                                                          "name":  "Multi-Platform Publisher",
+                                                          "brief":  "Expert orchestrator for one-click Chinese blog publishing. Routes a single article to 知乎 / 小红书 / CSD"
+                                                      },
+                                                      {
+                                                          "slug":  "podcast-strategist",
+                                                          "name":  "Podcast Strategist",
+                                                          "brief":  "Content strategy and operations expert for the Chinese podcast market, with deep expertise in Xiaoyu"
+                                                      },
+                                                      {
+                                                          "slug":  "pr-communications-manager",
+                                                          "name":  "PR \u0026 Communications Manager",
+                                                          "brief":  "Strategic public relations and communications specialist for media relations, press releases, crisis"
+                                                      },
+                                                      {
+                                                          "slug":  "private-domain-operator",
+                                                          "name":  "Private Domain Operator",
+                                                          "brief":  "Expert in building enterprise WeChat (WeCom) private domain ecosystems, with deep expertise in SCRM "
+                                                      },
+                                                      {
+                                                          "slug":  "reddit-community-builder",
+                                                          "name":  "Reddit Community Builder",
+                                                          "brief":  "Expert Reddit marketing specialist focused on authentic community engagement, value-driven content c"
+                                                      },
+                                                      {
+                                                          "slug":  "seo-specialist",
+                                                          "name":  "SEO 专家",
+                                                          "brief":  "负责搜索优化、关键词策略与技术 SEO"
+                                                      },
+                                                      {
+                                                          "slug":  "short-video-editing-coach",
+                                                          "name":  "Short-Video Editing Coach",
+                                                          "brief":  "Hands-on short-video editing coach covering the full post-production pipeline, with mastery of CapCu"
+                                                      },
+                                                      {
+                                                          "slug":  "social-media-strategist",
+                                                          "name":  "社交媒体策略师",
+                                                          "brief":  "负责社交平台内容规划与运营策略"
+                                                      },
+                                                      {
+                                                          "slug":  "tiktok-strategist",
+                                                          "name":  "TikTok Strategist",
+                                                          "brief":  "Expert TikTok marketing specialist focused on viral content creation, algorithm optimization, and co"
+                                                      },
+                                                      {
+                                                          "slug":  "twitter-engager",
+                                                          "name":  "Twitter Engager",
+                                                          "brief":  "Expert Twitter marketing specialist focused on real-time engagement, thought leadership building, an"
+                                                      },
+                                                      {
+                                                          "slug":  "video-optimization-specialist",
+                                                          "name":  "Video Optimization Specialist",
+                                                          "brief":  "Video marketing strategist specializing in YouTube algorithm optimization, audience retention, chapt"
+                                                      },
+                                                      {
+                                                          "slug":  "wechat-official-account-manager",
+                                                          "name":  "WeChat Official Account Manager",
+                                                          "brief":  "Expert WeChat Official Account (OA) strategist specializing in content marketing, subscriber engagem"
+                                                      },
+                                                      {
+                                                          "slug":  "weibo-strategist",
+                                                          "name":  "Weibo Strategist",
+                                                          "brief":  "Full-spectrum operations expert for Sina Weibo, with deep expertise in trending topic mechanics, Sup"
+                                                      },
+                                                      {
+                                                          "slug":  "xiaohongshu-specialist",
+                                                          "name":  "Xiaohongshu Specialist",
+                                                          "brief":  "Expert Xiaohongshu marketing specialist focused on lifestyle content, trend-driven strategies, and a"
+                                                      },
+                                                      {
+                                                          "slug":  "x-twitter-intelligence-analyst",
+                                                          "name":  "X/Twitter Intelligence Analyst",
+                                                          "brief":  "Social intelligence specialist for X/Twitter research, trend detection, account monitoring, and evid"
+                                                      },
+                                                      {
+                                                          "slug":  "zhihu-strategist",
+                                                          "name":  "Zhihu Strategist",
+                                                          "brief":  "Expert Zhihu marketing specialist focused on thought leadership, community credibility, and knowledg"
+                                                      }
+                                                  ]
+                                    },
+                      "paid-media":  {
+                                         "label":  "Paid Media",
+                                         "icon":  "Target",
+                                         "color":  "#EAB308",
+                                         "roles":  [
+                                                       {
+                                                           "slug":  "ad-creative-strategist",
+                                                           "name":  "Ad Creative Strategist",
+                                                           "brief":  "Paid media creative specialist focused on ad copywriting, RSA optimization, asset group design, and "
+                                                       },
+                                                       {
+                                                           "slug":  "paid-media-auditor",
+                                                           "name":  "Paid Media Auditor",
+                                                           "brief":  "Comprehensive paid media auditor who systematically evaluates Google Ads, Microsoft Ads, and Meta ac"
+                                                       },
+                                                       {
+                                                           "slug":  "paid-social-strategist",
+                                                           "name":  "Paid Social Strategist",
+                                                           "brief":  "Cross-platform paid social advertising specialist covering Meta (Facebook/Instagram), LinkedIn, TikT"
+                                                       },
+                                                       {
+                                                           "slug":  "ppc-campaign-strategist",
+                                                           "name":  "PPC Campaign Strategist",
+                                                           "brief":  "Senior paid media strategist specializing in large-scale search, shopping, and performance max campa"
+                                                       },
+                                                       {
+                                                           "slug":  "programmatic-display-buyer",
+                                                           "name":  "Programmatic \u0026 Display Buyer",
+                                                           "brief":  "Display advertising and programmatic media buying specialist covering managed placements, Google Dis"
+                                                       },
+                                                       {
+                                                           "slug":  "search-query-analyst",
+                                                           "name":  "Search Query Analyst",
+                                                           "brief":  "Specialist in search term analysis, negative keyword architecture, and query-to-intent mapping. Turn"
+                                                       },
+                                                       {
+                                                           "slug":  "tracking-measurement-specialist",
+                                                           "name":  "Tracking \u0026 Measurement Specialist",
+                                                           "brief":  "Expert in conversion tracking architecture, tag management, and attribution modeling across Google T"
+                                                       }
+                                                   ]
+                                     },
+                      "product":  {
+                                      "label":  "Product",
+                                      "icon":  "Box",
+                                      "color":  "#D946EF",
+                                      "roles":  [
+                                                    {
+                                                        "slug":  "behavioral-nudge-engine",
+                                                        "name":  "Behavioral Nudge Engine",
+                                                        "brief":  "Behavioral psychology specialist that adapts software interaction cadences and styles to maximize us"
+                                                    },
+                                                    {
+                                                        "slug":  "feedback-synthesizer",
+                                                        "name":  "Feedback Synthesizer",
+                                                        "brief":  "Expert in collecting, analyzing, and synthesizing user feedback from multiple channels to extract ac"
+                                                    },
+                                                    {
+                                                        "slug":  "product-manager",
+                                                        "name":  "产品经理",
+                                                        "brief":  "负责需求梳理、优先级排序与交付规划"
+                                                    },
+                                                    {
+                                                        "slug":  "sprint-prioritizer",
+                                                        "name":  "Sprint Prioritizer",
+                                                        "brief":  "Expert product manager specializing in agile sprint planning, feature prioritization, and resource a"
+                                                    },
+                                                    {
+                                                        "slug":  "trend-researcher",
+                                                        "name":  "Trend Researcher",
+                                                        "brief":  "Expert market intelligence analyst specializing in identifying emerging trends, competitive analysis"
+                                                    }
+                                                ]
+                                  },
+                      "project-management":  {
+                                                 "label":  "Project Management",
+                                                 "icon":  "ClipboardList",
+                                                 "color":  "#0EA5E9",
+                                                 "roles":  [
+                                                               {
+                                                                   "slug":  "experiment-tracker",
+                                                                   "name":  "Experiment Tracker",
+                                                                   "brief":  "Expert project manager specializing in experiment design, execution tracking, and data-driven decisi"
+                                                               },
+                                                               {
+                                                                   "slug":  "jira-workflow-steward",
+                                                                   "name":  "Jira 工作流管家",
+                                                                   "brief":  "负责 Jira 流程配置与任务流转"
+                                                               },
+                                                               {
+                                                                   "slug":  "meeting-notes-specialist",
+                                                                   "name":  "Meeting Notes Specialist",
+                                                                   "brief":  "Extract structured decisions, action items, and open questions from meeting transcripts or rough not"
+                                                               },
+                                                               {
+                                                                   "slug":  "project-shepherd",
+                                                                   "name":  "项目牧羊人",
+                                                                   "brief":  "负责项目推进、风险预警与交付节奏"
+                                                               },
+                                                               {
+                                                                   "slug":  "senior-project-manager",
+                                                                   "name":  "Senior Project Manager",
+                                                                   "brief":  "Converts specs to tasks and remembers previous projects. Focused on realistic scope, no background p"
+                                                               },
+                                                               {
+                                                                   "slug":  "studio-operations",
+                                                                   "name":  "Studio Operations",
+                                                                   "brief":  "Expert operations manager specializing in day-to-day studio efficiency, process optimization, and re"
+                                                               },
+                                                               {
+                                                                   "slug":  "studio-producer",
+                                                                   "name":  "Studio Producer",
+                                                                   "brief":  "Senior strategic leader specializing in high-level creative and technical project orchestration, res"
+                                                               }
+                                                           ]
+                                             },
+                      "sales":  {
+                                    "label":  "Sales",
+                                    "icon":  "TrendingUp",
+                                    "color":  "#10B981",
+                                    "roles":  [
+                                                  {
+                                                      "slug":  "account-strategist",
+                                                      "name":  "Account Strategist",
+                                                      "brief":  "Expert post-sale account strategist specializing in land-and-expand execution, stakeholder mapping, "
+                                                  },
+                                                  {
+                                                      "slug":  "deal-strategist",
+                                                      "name":  "Deal Strategist",
+                                                      "brief":  "Senior deal strategist specializing in MEDDPICC qualification, competitive positioning, and win plan"
+                                                  },
+                                                  {
+                                                      "slug":  "discovery-coach",
+                                                      "name":  "Discovery Coach",
+                                                      "brief":  "Coaches sales teams on elite discovery methodology — question design, current-state mapping, gap qua"
+                                                  },
+                                                  {
+                                                      "slug":  "offer-lead-gen-strategist",
+                                                      "name":  "Offer \u0026 Lead Gen Strategist",
+                                                      "brief":  "Top-of-funnel architect who designs irresistible offers and lead magnets that attract qualified buye"
+                                                  },
+                                                  {
+                                                      "slug":  "outbound-strategist",
+                                                      "name":  "Outbound Strategist",
+                                                      "brief":  "Signal-based outbound specialist who designs multi-channel prospecting sequences, defines ICPs, and "
+                                                  },
+                                                  {
+                                                      "slug":  "pipeline-analyst",
+                                                      "name":  "Pipeline Analyst",
+                                                      "brief":  "Revenue operations analyst specializing in pipeline health diagnostics, deal velocity analysis, fore"
+                                                  },
+                                                  {
+                                                      "slug":  "proposal-strategist",
+                                                      "name":  "Proposal Strategist",
+                                                      "brief":  "Strategic proposal architect who transforms RFPs and sales opportunities into compelling win narrati"
+                                                  },
+                                                  {
+                                                      "slug":  "sales-coach",
+                                                      "name":  "Sales Coach",
+                                                      "brief":  "Expert sales coaching specialist focused on rep development, pipeline review facilitation, call coac"
+                                                  },
+                                                  {
+                                                      "slug":  "sales-engineer",
+                                                      "name":  "Sales Engineer",
+                                                      "brief":  "Senior pre-sales engineer specializing in technical discovery, demo engineering, POC scoping, compet"
+                                                  }
+                                              ]
+                                },
+                      "security":  {
+                                       "label":  "Security",
+                                       "icon":  "ShieldCheck",
+                                       "color":  "#EF4444",
+                                       "roles":  [
+                                                     {
+                                                         "slug":  "ai-generated-code-security-auditor",
+                                                         "name":  "AI-Generated Code Security Auditor",
+                                                         "brief":  "Security reviewer for AI-generated and vibe-coded apps — hunts the hardcoded secrets, broken row-lev"
+                                                     },
+                                                     {
+                                                         "slug":  "application-security-engineer",
+                                                         "name":  "应用安全工程师",
+                                                         "brief":  "负责威胁建模、安全编码与漏洞审查"
+                                                     },
+                                                     {
+                                                         "slug":  "blockchain-security-auditor",
+                                                         "name":  "Blockchain Security Auditor",
+                                                         "brief":  "Expert smart contract security auditor specializing in vulnerability detection, formal verification,"
+                                                     },
+                                                     {
+                                                         "slug":  "cloud-security-architect",
+                                                         "name":  "Cloud Security Architect",
+                                                         "brief":  "Cloud-native security specialist designing zero trust architectures, implementing defense-in-depth a"
+                                                     },
+                                                     {
+                                                         "slug":  "compliance-auditor",
+                                                         "name":  "合规审计员",
+                                                         "brief":  "负责法规遵循、隐私与合规审计"
+                                                     },
+                                                     {
+                                                         "slug":  "incident-responder",
+                                                         "name":  "Incident Responder",
+                                                         "brief":  "Digital forensics and incident response specialist who leads breach investigations, contains active "
+                                                     },
+                                                     {
+                                                         "slug":  "penetration-tester",
+                                                         "name":  "Penetration Tester",
+                                                         "brief":  "Offensive security specialist conducting authorized penetration tests, red team operations, and vuln"
+                                                     },
+                                                     {
+                                                         "slug":  "secrets-credential-hygiene-engineer",
+                                                         "name":  "Secrets \u0026 Credential Hygiene Engineer",
+                                                         "brief":  "Owns the full lifecycle of secrets and credentials — detection, prevention, vaulting, rotation, and "
+                                                     },
+                                                     {
+                                                         "slug":  "security-architect",
+                                                         "name":  "Security Architect",
+                                                         "brief":  "Expert security architect specializing in threat modeling, secure-by-design architecture, trust-boun"
+                                                     },
+                                                     {
+                                                         "slug":  "senior-secops-engineer",
+                                                         "name":  "Senior SecOps Engineer",
+                                                         "brief":  "Defensive application security specialist who scans every code submission for secrets and sensitive "
+                                                     },
+                                                     {
+                                                         "slug":  "threat-detection-engineer",
+                                                         "name":  "Threat Detection Engineer",
+                                                         "brief":  "Expert detection engineer specializing in SIEM rule development, MITRE ATT\u0026CK coverage mapping, thre"
+                                                     },
+                                                     {
+                                                         "slug":  "threat-intelligence-analyst",
+                                                         "name":  "Threat Intelligence Analyst",
+                                                         "brief":  "Cyber threat intelligence specialist who tracks adversary groups, maps attack campaigns to MITRE ATT"
+                                                     }
+                                                 ]
+                                   },
+                      "spatial-computing":  {
+                                                "label":  "Spatial Computing",
+                                                "icon":  "Boxes",
+                                                "color":  "#06B6D4",
+                                                "roles":  [
+                                                              {
+                                                                  "slug":  "macos-spatial-metal-engineer",
+                                                                  "name":  "macOS Spatial/Metal Engineer",
+                                                                  "brief":  "Native Swift and Metal specialist building high-performance 3D rendering systems and spatial computi"
+                                                              },
+                                                              {
+                                                                  "slug":  "terminal-integration-specialist",
+                                                                  "name":  "Terminal Integration Specialist",
+                                                                  "brief":  "Terminal emulation, text rendering optimization, and SwiftTerm integration for modern Swift applicat"
+                                                              },
+                                                              {
+                                                                  "slug":  "visionos-spatial-engineer",
+                                                                  "name":  "visionOS Spatial Engineer",
+                                                                  "brief":  "Native visionOS spatial computing, SwiftUI volumetric interfaces, and Liquid Glass design implementa"
+                                                              },
+                                                              {
+                                                                  "slug":  "xr-cockpit-interaction-specialist",
+                                                                  "name":  "XR Cockpit Interaction Specialist",
+                                                                  "brief":  "Specialist in designing and developing immersive cockpit-based control systems for XR environments"
+                                                              },
+                                                              {
+                                                                  "slug":  "xr-immersive-developer",
+                                                                  "name":  "XR Immersive Developer",
+                                                                  "brief":  "Expert WebXR and immersive technology developer with specialization in browser-based AR/VR/XR applic"
+                                                              },
+                                                              {
+                                                                  "slug":  "xr-interface-architect",
+                                                                  "name":  "XR Interface Architect",
+                                                                  "brief":  "Spatial interaction designer and interface strategist for immersive AR/VR/XR environments"
+                                                              }
+                                                          ]
+                                            },
+                      "specialized":  {
+                                          "label":  "Specialized",
+                                          "icon":  "Sparkles",
+                                          "color":  "#6366F1",
+                                          "roles":  [
+                                                        {
+                                                            "slug":  "accounts-payable-agent",
+                                                            "name":  "Accounts Payable Agent",
+                                                            "brief":  "Autonomous payment processing specialist that executes vendor payments, contractor invoices, and rec"
+                                                        },
+                                                        {
+                                                            "slug":  "agentic-identity-trust-architect",
+                                                            "name":  "Agentic Identity \u0026 Trust Architect",
+                                                            "brief":  "Designs identity, authentication, and trust verification systems for autonomous AI agents operating "
+                                                        },
+                                                        {
+                                                            "slug":  "agents-orchestrator",
+                                                            "name":  "Agent 编排者",
+                                                            "brief":  "负责多 Agent 协作流程设计与调度"
+                                                        },
+                                                        {
+                                                            "slug":  "aging-parent-care-companion",
+                                                            "name":  "Aging Parent Care Companion",
+                                                            "brief":  "Compassionate, HIPAA-aligned care coordination and decision-support agent for family caregivers mana"
+                                                        },
+                                                        {
+                                                            "slug":  "automation-governance-architect",
+                                                            "name":  "Automation Governance Architect",
+                                                            "brief":  "Governance-first architect for business automations (n8n-first) who audits value, risk, and maintain"
+                                                        },
+                                                        {
+                                                            "slug":  "business-strategist",
+                                                            "name":  "商业战略顾问",
+                                                            "brief":  "负责竞争分析、市场进入与商业模式"
+                                                        },
+                                                        {
+                                                            "slug":  "change-management-consultant",
+                                                            "name":  "Change Management Consultant",
+                                                            "brief":  "Expert change management specialist using ADKAR, Kotter, and Prosci frameworks to guide organization"
+                                                        },
+                                                        {
+                                                            "slug":  "chief-financial-officer",
+                                                            "name":  "Chief Financial Officer",
+                                                            "brief":  "Strategic finance executive who governs capital allocation, treasury operations, financial planning,"
+                                                        },
+                                                        {
+                                                            "slug":  "chief-of-staff",
+                                                            "name":  "Chief of Staff",
+                                                            "brief":  "Master coordinator for founders and executives — filters noise, owns processes, enforces consistency"
+                                                        },
+                                                        {
+                                                            "slug":  "civil-engineer",
+                                                            "name":  "Civil Engineer",
+                                                            "brief":  "Expert civil and structural engineer with global standards coverage — Eurocode, DIN, ACI, AISC, ASCE"
+                                                        },
+                                                        {
+                                                            "slug":  "codebase-archaeologist",
+                                                            "name":  "Codebase Archaeologist",
+                                                            "brief":  "Multi-session, multi-tool drift detection specialist who audits codebases touched by several AI codi"
+                                                        },
+                                                        {
+                                                            "slug":  "corporate-training-designer",
+                                                            "name":  "Corporate Training Designer",
+                                                            "brief":  "Expert in enterprise training system design and curriculum development — proficient in training need"
+                                                        },
+                                                        {
+                                                            "slug":  "cultural-intelligence-strategist",
+                                                            "name":  "Cultural Intelligence Strategist",
+                                                            "brief":  "CQ specialist that detects invisible exclusion, researches global context, and ensures software reso"
+                                                        },
+                                                        {
+                                                            "slug":  "customer-service",
+                                                            "name":  "客服专员",
+                                                            "brief":  "负责客户问题处理、投诉应对与售后"
+                                                        },
+                                                        {
+                                                            "slug":  "customer-success-manager",
+                                                            "name":  "Customer Success Manager",
+                                                            "brief":  "Strategic customer success specialist for onboarding, health scoring, QBR facilitation, churn preven"
+                                                        },
+                                                        {
+                                                            "slug":  "data-consolidation-agent",
+                                                            "name":  "Data Consolidation Agent",
+                                                            "brief":  "AI agent that consolidates extracted sales data into live reporting dashboards with territory, rep, "
+                                                        },
+                                                        {
+                                                            "slug":  "data-privacy-officer",
+                                                            "name":  "Data Privacy Officer",
+                                                            "brief":  "Corporate data privacy specialist and DPO who builds GDPR, CCPA, and global privacy compliance progr"
+                                                        },
+                                                        {
+                                                            "slug":  "developer-advocate",
+                                                            "name":  "Developer Advocate",
+                                                            "brief":  "Expert developer advocate specializing in building developer communities, creating compelling techni"
+                                                        },
+                                                        {
+                                                            "slug":  "document-generator",
+                                                            "name":  "Document Generator",
+                                                            "brief":  "Expert document creation specialist who generates professional PDF, PPTX, DOCX, and XLSX files using"
+                                                        },
+                                                        {
+                                                            "slug":  "esg-sustainability-officer",
+                                                            "name":  "ESG \u0026 Sustainability Officer",
+                                                            "brief":  "Corporate sustainability strategist and ESG reporting specialist who builds environmental, social, a"
+                                                        },
+                                                        {
+                                                            "slug":  "fedramp-rmf-compliance-engineer",
+                                                            "name":  "FedRAMP \u0026 RMF Compliance Engineer",
+                                                            "brief":  "Expert FedRAMP and NIST Risk Management Framework compliance engineer specializing in both FedRAMP a"
+                                                        },
+                                                        {
+                                                            "slug":  "french-consulting-market-navigator",
+                                                            "name":  "French Consulting Market Navigator",
+                                                            "brief":  "Navigate the French ESN/SI freelance ecosystem — margin models, platform mechanics (Malt, collective"
+                                                        },
+                                                        {
+                                                            "slug":  "government-digital-presales-consultant",
+                                                            "name":  "Government Digital Presales Consultant",
+                                                            "brief":  "Presales expert for China\u0027s government digital transformation market (ToG), proficient in policy int"
+                                                        },
+                                                        {
+                                                            "slug":  "grant-writer",
+                                                            "name":  "Grant Writer",
+                                                            "brief":  "Expert grant writing specialist for nonprofits, research institutions, and social enterprises — cove"
+                                                        },
+                                                        {
+                                                            "slug":  "healthcare-customer-service",
+                                                            "name":  "Healthcare Customer Service",
+                                                            "brief":  "Empathetic healthcare customer service specialist for patient support, billing inquiries, appointmen"
+                                                        },
+                                                        {
+                                                            "slug":  "healthcare-marketing-compliance-specialist",
+                                                            "name":  "医疗营销合规",
+                                                            "brief":  "负责医疗行业营销合规审查"
+                                                        },
+                                                        {
+                                                            "slug":  "hospitality-guest-services",
+                                                            "name":  "Hospitality Guest Services",
+                                                            "brief":  "Comprehensive hospitality guest services specialist for hotels, resorts, restaurants, and event venu"
+                                                        },
+                                                        {
+                                                            "slug":  "hr-onboarding",
+                                                            "name":  "HR Onboarding",
+                                                            "brief":  "Comprehensive HR onboarding specialist for employee orientation, documentation management, complianc"
+                                                        },
+                                                        {
+                                                            "slug":  "identity-graph-operator",
+                                                            "name":  "Identity Graph Operator",
+                                                            "brief":  "Operates a shared identity graph that multiple AI agents resolve against. Ensures every agent in a m"
+                                                        },
+                                                        {
+                                                            "slug":  "korean-business-navigator",
+                                                            "name":  "Korean Business Navigator",
+                                                            "brief":  "Korean business culture for foreign professionals — 품의 decision process, nunchi reading, KakaoTalk b"
+                                                        },
+                                                        {
+                                                            "slug":  "language-translator",
+                                                            "name":  "Language Translator",
+                                                            "brief":  "Real-time Spanish ↔ English translation specialist with cultural context, regional dialect awareness"
+                                                        },
+                                                        {
+                                                            "slug":  "legal-billing-time-tracking",
+                                                            "name":  "Legal Billing \u0026 Time Tracking",
+                                                            "brief":  "Comprehensive legal billing and time tracking specialist for accurate time capture, invoice generati"
+                                                        },
+                                                        {
+                                                            "slug":  "legal-client-intake",
+                                                            "name":  "Legal Client Intake",
+                                                            "brief":  "Comprehensive legal client intake specialist for qualifying prospects, collecting case information, "
+                                                        },
+                                                        {
+                                                            "slug":  "legal-document-review",
+                                                            "name":  "Legal Document Review",
+                                                            "brief":  "Comprehensive legal document review specialist for contracts, litigation documents, and real estate "
+                                                        },
+                                                        {
+                                                            "slug":  "loan-officer-assistant",
+                                                            "name":  "Loan Officer Assistant",
+                                                            "brief":  "Comprehensive loan officer assistant for mortgage and lending professionals — covering borrower inta"
+                                                        },
+                                                        {
+                                                            "slug":  "lsp-index-engineer",
+                                                            "name":  "LSP/Index Engineer",
+                                                            "brief":  "Language Server Protocol specialist building unified code intelligence systems through LSP client or"
+                                                        },
+                                                        {
+                                                            "slug":  "m-a-integration-manager",
+                                                            "name":  "M\u0026A Integration Manager",
+                                                            "brief":  "Mergers and acquisitions integration specialist who designs and executes post-merger integration pro"
+                                                        },
+                                                        {
+                                                            "slug":  "mcp-builder",
+                                                            "name":  "MCP 构建者",
+                                                            "brief":  "负责 MCP 服务器设计、工具定义与集成"
+                                                        },
+                                                        {
+                                                            "slug":  "medical-billing-coding-specialist",
+                                                            "name":  "Medical Billing \u0026 Coding Specialist",
+                                                            "brief":  "Expert medical billing and coding specialist for ICD-10-CM/PCS, CPT, and HCPCS coding, claim submiss"
+                                                        },
+                                                        {
+                                                            "slug":  "model-qa-specialist",
+                                                            "name":  "Model QA Specialist",
+                                                            "brief":  "Independent model QA expert who audits ML and statistical models end-to-end - from documentation rev"
+                                                        },
+                                                        {
+                                                            "slug":  "operations-manager",
+                                                            "name":  "Operations Manager",
+                                                            "brief":  "Business operations specialist who applies Lean, Six Sigma, and systems thinking to process mapping,"
+                                                        },
+                                                        {
+                                                            "slug":  "organizational-psychologist",
+                                                            "name":  "Organizational Psychologist",
+                                                            "brief":  "Applied organizational psychologist who diagnoses team dynamics, psychological safety, burnout risk,"
+                                                        },
+                                                        {
+                                                            "slug":  "personal-growth-mentor",
+                                                            "name":  "Personal Growth Mentor",
+                                                            "brief":  "Cross-domain personal development mentor for goal clarity, habit design, strategic decisions, and ac"
+                                                        },
+                                                        {
+                                                            "slug":  "pricing-analyst",
+                                                            "name":  "Pricing Analyst",
+                                                            "brief":  "Specialized pricing analyst who develops optimal pricing models through market research, competitor "
+                                                        },
+                                                        {
+                                                            "slug":  "real-estate-buyer-seller",
+                                                            "name":  "Real Estate Buyer \u0026 Seller",
+                                                            "brief":  "Comprehensive real estate agent assistant for buyer representation, seller representation, listing m"
+                                                        },
+                                                        {
+                                                            "slug":  "recruitment-specialist",
+                                                            "name":  "Recruitment Specialist",
+                                                            "brief":  "Expert recruitment operations and talent acquisition specialist — skilled in China\u0027s major hiring pl"
+                                                        },
+                                                        {
+                                                            "slug":  "report-distribution-agent",
+                                                            "name":  "Report Distribution Agent",
+                                                            "brief":  "AI agent that automates distribution of consolidated sales reports to representatives based on terri"
+                                                        },
+                                                        {
+                                                            "slug":  "resume-tailor",
+                                                            "name":  "Resume Tailor",
+                                                            "brief":  "Candidate-side resume optimization specialist who analyzes job descriptions, maps real experience to"
+                                                        },
+                                                        {
+                                                            "slug":  "retail-customer-returns",
+                                                            "name":  "Retail Customer Returns",
+                                                            "brief":  "Comprehensive retail customer returns specialist for processing returns, exchanges, and refunds acro"
+                                                        },
+                                                        {
+                                                            "slug":  "sales-data-extraction-agent",
+                                                            "name":  "Sales Data Extraction Agent",
+                                                            "brief":  "AI agent specialized in monitoring Excel files and extracting key sales metrics (MTD, YTD, Year End)"
+                                                        },
+                                                        {
+                                                            "slug":  "salesforce-architect",
+                                                            "name":  "Salesforce Architect",
+                                                            "brief":  "Solution architecture for Salesforce platform — multi-cloud design, integration patterns, governor l"
+                                                        },
+                                                        {
+                                                            "slug":  "sales-outreach",
+                                                            "name":  "Sales Outreach",
+                                                            "brief":  "Consultative B2B sales outreach specialist for cold prospecting, lead follow-up, objection handling,"
+                                                        },
+                                                        {
+                                                            "slug":  "strategy-duel-agent",
+                                                            "name":  "Strategy Duel Agent",
+                                                            "brief":  "Conducts live strategy duels using game theory and the 36 Chinese stratagems"
+                                                        },
+                                                        {
+                                                            "slug":  "study-abroad-advisor",
+                                                            "name":  "Study Abroad Advisor",
+                                                            "brief":  "Full-spectrum study abroad planning expert covering the US, UK, Canada, Australia, Europe, Hong Kong"
+                                                        },
+                                                        {
+                                                            "slug":  "supply-chain-strategist",
+                                                            "name":  "Supply Chain Strategist",
+                                                            "brief":  "Expert supply chain management and procurement strategy specialist — skilled in supplier development"
+                                                        },
+                                                        {
+                                                            "slug":  "workflow-architect",
+                                                            "name":  "Workflow Architect",
+                                                            "brief":  "Workflow design specialist who maps complete workflow trees for every system, user journey, and agen"
+                                                        },
+                                                        {
+                                                            "slug":  "zk-steward",
+                                                            "name":  "ZK Steward",
+                                                            "brief":  "\"Knowledge-base steward in the spirit of Niklas Luhmann\u0027s Zettelkasten. Default perspective: Luhmann"
+                                                        }
+                                                    ]
+                                      },
+                      "support":  {
+                                      "label":  "Support",
+                                      "icon":  "LifeBuoy",
+                                      "color":  "#84CC16",
+                                      "roles":  [
+                                                    {
+                                                        "slug":  "analytics-reporter",
+                                                        "name":  "Analytics Reporter",
+                                                        "brief":  "Expert data analyst transforming raw data into actionable business insights. Creates dashboards, per"
+                                                    },
+                                                    {
+                                                        "slug":  "executive-summary-generator",
+                                                        "name":  "Executive Summary Generator",
+                                                        "brief":  "Consultant-grade AI specialist trained to think and communicate like a senior strategy consultant. T"
+                                                    },
+                                                    {
+                                                        "slug":  "finance-tracker",
+                                                        "name":  "Finance Tracker",
+                                                        "brief":  "Expert financial analyst and controller specializing in financial planning, budget management, and b"
+                                                    },
+                                                    {
+                                                        "slug":  "infrastructure-maintainer",
+                                                        "name":  "Infrastructure Maintainer",
+                                                        "brief":  "Expert infrastructure specialist focused on system reliability, performance optimization, and techni"
+                                                    },
+                                                    {
+                                                        "slug":  "legal-compliance-checker",
+                                                        "name":  "Legal Compliance Checker",
+                                                        "brief":  "Expert legal and compliance specialist ensuring business operations, data handling, and content crea"
+                                                    },
+                                                    {
+                                                        "slug":  "support-responder",
+                                                        "name":  "客服响应",
+                                                        "brief":  "负责客户问题响应与初步排查"
+                                                    }
+                                                ]
+                                  },
+                      "testing":  {
+                                      "label":  "Testing",
+                                      "icon":  "FlaskConical",
+                                      "color":  "#F59E0B",
+                                      "roles":  [
+                                                    {
+                                                        "slug":  "accessibility-auditor",
+                                                        "name":  "Accessibility Auditor",
+                                                        "brief":  "Expert accessibility specialist who audits interfaces against WCAG standards, tests with assistive t"
+                                                    },
+                                                    {
+                                                        "slug":  "api-tester",
+                                                        "name":  "API 测试员",
+                                                        "brief":  "负责接口测试、契约验证与自动化"
+                                                    },
+                                                    {
+                                                        "slug":  "evidence-collector",
+                                                        "name":  "证据收集者",
+                                                        "brief":  "负责收集缺陷证据与复现步骤"
+                                                    },
+                                                    {
+                                                        "slug":  "performance-benchmarker",
+                                                        "name":  "性能基准测试员",
+                                                        "brief":  "负责性能基准、负载测试与瓶颈分析"
+                                                    },
+                                                    {
+                                                        "slug":  "reality-checker",
+                                                        "name":  "Reality Checker",
+                                                        "brief":  "Stops fantasy approvals, evidence-based certification - Default to \"NEEDS WORK\", requires overwhelmi"
+                                                    },
+                                                    {
+                                                        "slug":  "test-automation-engineer",
+                                                        "name":  "测试自动化工程师",
+                                                        "brief":  "负责端到端测试、自动化用例与回归"
+                                                    },
+                                                    {
+                                                        "slug":  "test-results-analyzer",
+                                                        "name":  "Test Results Analyzer",
+                                                        "brief":  "Expert test analysis specialist focused on comprehensive test result evaluation, quality metrics ana"
+                                                    },
+                                                    {
+                                                        "slug":  "tool-evaluator",
+                                                        "name":  "Tool Evaluator",
+                                                        "brief":  "Expert technology assessment specialist focused on evaluating, testing, and recommending tools, soft"
+                                                    },
+                                                    {
+                                                        "slug":  "workflow-optimizer",
+                                                        "name":  "Workflow Optimizer",
+                                                        "brief":  "Expert process improvement specialist focused on analyzing, optimizing, and automating workflows acr"
+                                                    }
+                                                ]
+                                  }
+                  }
+}
