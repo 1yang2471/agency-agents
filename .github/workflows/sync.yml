@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: 检出仓库
         uses: actions/checkout@v4

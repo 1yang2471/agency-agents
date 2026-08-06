@@ -18,7 +18,7 @@ param(
     [string]$WorkDir  = $(if ($env:TEMP)   { "$env:TEMP\agency-agents-sync" }
                            elseif ($env:TMPDIR) { "$env:TMPDIR/agency-agents-sync" }
                            else { "/tmp/agency-agents-sync" }),
-    [string]$OutputPath = "$PSScriptRoot\roles-index.json"
+    [string]$OutputPath = $(Join-Path $PSScriptRoot "roles-index.json")
 )
 
 # 注意：PowerShell 5 中 $ErrorActionPreference="Stop" 会把 native 命令（git）的 stderr
@@ -61,7 +61,7 @@ Write-Host "      上游 commit: $upstreamSha" -ForegroundColor DarkGray
 
 # ---------- 2. 读取 divisions.json ----------
 Write-Host "[2/6] 读取权威部门列表 divisions.json ..." -ForegroundColor Cyan
-$divisionsRaw = Get-Content -Raw "$WorkDir\divisions.json" | ConvertFrom-Json
+$divisionsRaw = Get-Content -Raw (Join-Path $WorkDir "divisions.json") | ConvertFrom-Json
 $divisionKeys = @($divisionsRaw.divisions.PSObject.Properties.Name)
 
 # ---------- 3. 解析角色 frontmatter ----------
