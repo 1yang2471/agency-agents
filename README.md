@@ -18,9 +18,33 @@ agency-agents/
 ├── roles-index.json          # 角色索引缓存（sync.ps1 自动生成，勿手改）
 ├── zh-overrides.json         # slug → 中文名/简介 覆盖（手动维护）
 ├── sync.ps1                  # 上游同步脚本（重建索引 + slug 校验）
+├── install.ps1               # 一键安装器（全平台 junction + 计划任务，见下）
+├── update.ps1                # 静默自动更新（计划任务每日 git pull）
 ├── tests/test_mapping.py     # 匹配算法回归测试
 └── .github/workflows/sync.yml# 每周自动同步上游角色
 ```
+
+## 一键安装（Windows，推荐）
+
+新用户三步：**下载 → 安装 → 重启**。
+
+```powershell
+# 1) 下载（用 git clone 才能自动更新；ZIP 解压无法自动更新）
+git clone https://github.com/1yang2471/agency-agents
+cd agency-agents
+
+# 2) 一键安装：自动探测本机所有 agent 平台并建立 junction 指向本目录（唯一真身），
+#    同时注册每日 09:00 自动 git pull 的计划任务
+.\install.ps1
+
+# 可选参数
+.\install.ps1 -SkipScheduledTask   # 不注册自动更新计划任务
+.\install.ps1 -Uninstall           # 卸载（删除各平台链接与计划任务，保留本目录）
+```
+
+**原理**：各 agent 只扫描自己固定的 skills 目录（Trae `~\.trae-cn\skills`、CodeBuddy `~\.codebuddy\skills`、Codex `~\.codex\skills`、opencode `~\.config\opencode\skills`、Claude Code `~\.claude\skills`、通用 `~\.agents\skills`）。install.ps1 在每个已装平台的目录下建立 junction 指向本目录，实现**下载一次、全平台同步**。`update.ps1` 由计划任务每日静默执行 `git pull`。
+
+> 注意：真身 = 本目录（含 `.git`），请勿移动或删除；如需移动，移动后重新运行 install.ps1 即可。卸载不会删除真身。
 
 ## 安装（分享给他人）
 
