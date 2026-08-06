@@ -1,6 +1,9 @@
 # 运行时角色 prompt 缓存（SKILL.md 缓存式同步产生）
 roles-cache/
 
+# 同步脚本的临时克隆目录（WorkDir 兜底路径，防止误入仓库）
+agency-agents-sync/
+
 # Python 测试缓存
 __pycache__/
 *.pyc

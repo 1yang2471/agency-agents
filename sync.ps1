@@ -15,7 +15,9 @@
 #>
 param(
     [string]$RepoUrl  = "https://github.com/msitarzewski/agency-agents",
-    [string]$WorkDir  = "$env:TEMP\agency-agents-sync",
+    [string]$WorkDir  = $(if ($env:TEMP)   { "$env:TEMP\agency-agents-sync" }
+                           elseif ($env:TMPDIR) { "$env:TMPDIR/agency-agents-sync" }
+                           else { "/tmp/agency-agents-sync" }),
     [string]$OutputPath = "$PSScriptRoot\roles-index.json"
 )
 
