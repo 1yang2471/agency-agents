@@ -113,11 +113,16 @@ function Register-UpdateTask {
         return
     }
     # 使用 PowerShell 原生 ScheduledTasks cmdlet：比 schtasks.exe 更可靠（无 stderr 兼容问题、无需存储密码）
+    # 双触发器：每日 09:00 + 每次登录（覆盖关机/睡眠错过）；StartWhenAvailable 让唤醒后补跑错过的触发
     try {
         $action  = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$TrueRoot\update.ps1`""
-        $trigger = New-ScheduledTaskTrigger -Daily -At 09:00
-        Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Force -ErrorAction Stop | Out-Null
-        Write-OK "计划任务 $TaskName：已注册（每天 09:00 自动 git pull）"
+        $triggers = @(
+            (New-ScheduledTaskTrigger -Daily -At 09:00),
+            (New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME)
+        )
+        $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable
+        Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $triggers -Settings $settings -Force -ErrorAction Stop | Out-Null
+        Write-OK "计划任务 $TaskName：已注册（每日 09:00 + 登录时自动 git pull）"
     } catch {
         Write-Warn "计划任务注册失败：$($_.Exception.Message)（不影响安装；可手动用 schtasks 注册）"
     }

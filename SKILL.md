@@ -48,6 +48,7 @@ digraph agency_agents_workflow {
 
 角色数据按以下优先级获取：
 
+0. **本地仓库懒更新（每次调用必做，尽力而为）**：本目录若是 git 仓库（即通过 `git clone` 安装），先静默执行 `git -C <本目录> pull --ff-only`（设 5~10 秒超时）。成功则本 Skill 的所有文件（SKILL.md、install.ps1 等）自动与 GitHub 仓库保持最新，实现"使用即更新"，对每个下载者生效、无需任何手动配置。以下情况静默跳过，不阻塞本次使用：非 git 目录（ZIP 安装）、无网络、git 未安装、pull 因本地修改失败（本目录 `roles-index.json` 可能被运行时缓存同步修改过，属正常——角色数据仍会通过第 1 步拉取上游最新）。
 1. **远程拉取**（带超时保护）：读取上游仓库 `msitarzewski/agency-agents` 的 `divisions.json` 与部门文件列表，本次使用最新数据。
 2. **缓存写回**：拉取成功后，将结果写回本目录 `roles-index.json`（自动更新 `last_updated` 与 `upstream_sha`），使每次在线调用即完成一次自动同步。
 3. **兜底**：拉取失败或超时 → 使用 `roles-index.json`（即最近一次同步的缓存）。
@@ -56,6 +57,7 @@ digraph agency_agents_workflow {
 
 - `roles-index.json` 由 `sync.ps1` 或运行时缓存自动生成，无需手动维护；`zh-overrides.json` 提供 slug 的中文名/简介覆盖（手动维护）。
 - 选定的角色需要完整 prompt 时，按需从远程拉取并缓存到本目录 `roles-cache/`，避免重复拉取。
+- 懒更新与计划任务（install.ps1 注册的每日/登录触发 `git pull`）互为兜底：计划任务是"开机即更新"，懒更新是"使用即更新"，两者独立生效。
 
 ## 分步说明
 

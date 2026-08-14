@@ -42,7 +42,9 @@ cd agency-agents
 .\install.ps1 -Uninstall           # 卸载（删除各平台链接与计划任务，保留本目录）
 ```
 
-**原理**：各 agent 只扫描自己固定的 skills 目录（Trae `~\.trae-cn\skills`、CodeBuddy `~\.codebuddy\skills`、Codex `~\.codex\skills`、opencode `~\.config\opencode\skills`、Claude Code `~\.claude\skills`、通用 `~\.agents\skills`）。install.ps1 在每个已装平台的目录下建立 junction 指向本目录，实现**下载一次、全平台同步**。`update.ps1` 由计划任务每日静默执行 `git pull`。
+**原理**：各 agent 只扫描自己固定的 skills 目录（Trae `~\.trae-cn\skills`、CodeBuddy `~\.codebuddy\skills`、Codex `~\.codex\skills`、opencode `~\.config\opencode\skills`、Claude Code `~\.claude\skills`、通用 `~\.agents\skills`）。install.ps1 在每个已装平台的目录下建立 junction 指向本目录，实现**下载一次、全平台同步**。
+
+**自动同步（无需任何配置）**：本 Skill 每次被调用时会自动执行一次 `git pull --ff-only`——即"使用即更新"，对你下载的每个副本都生效，即使不运行 install.ps1、不注册计划任务。install.ps1 注册的计划任务（每日 09:00 + 登录时）只是"开机即更新"的补充，两者互为兜底。
 
 > 注意：真身 = 本目录（含 `.git`），请勿移动或删除；如需移动，移动后重新运行 install.ps1 即可。卸载不会删除真身。
 
