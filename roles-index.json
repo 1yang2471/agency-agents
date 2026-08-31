@@ -1,8 +1,8 @@
 {
   "_note": "自动生成：由 sync.ps1 从上游 msitarzewski/agency-agents 重建，勿手改。中文名/简介由 zh-overrides.json 覆盖提供。",
   "source": "https://github.com/msitarzewski/agency-agents",
-  "last_updated": "2026-08-24",
-  "upstream_sha": "ebe9c99acb5c96f9468de368d8bead775387d1a7",
+  "last_updated": "2026-08-31",
+  "upstream_sha": "3c9588880b7cafaec325a104899fd8bbe27e7d72",
   "divisions": {
     "academic": {
       "label": "Academic",
@@ -252,6 +252,11 @@
           "slug": "it-service-manager",
           "name": "IT Service Manager",
           "brief": "Expert IT service management specialist using ITIL 4 framework for service catalog design, incident "
+        },
+        {
+          "slug": "knowledge-graph-engineer",
+          "name": "Knowledge Graph Engineer",
+          "brief": "Structures information and capabilities into interconnected nodes (entities) and edges (relationship"
         },
         {
           "slug": "llm-post-training-engineer",
@@ -861,6 +866,18 @@
         }
       ]
     },
+    "research": {
+      "label": "Research",
+      "icon": "Search",
+      "color": "#7C3AED",
+      "roles": [
+        {
+          "slug": "research-synthesist",
+          "name": "Research Synthesist",
+          "brief": "Expert in literature review, source evaluation, and evidence synthesis — turns a scattered pile of s"
+        }
+      ]
+    },
     "sales": {
       "label": "Sales",
       "icon": "TrendingUp",
@@ -1206,6 +1223,11 @@
           "slug": "m-a-integration-manager",
           "name": "M&A Integration Manager",
           "brief": "Mergers and acquisitions integration specialist who designs and executes post-merger integration pro"
+        },
+        {
+          "slug": "master-plan-architect",
+          "name": "Master Plan Architect",
+          "brief": "Master planning architect, technical educator, and ruthless plan critic who specializes in deep arch"
         },
         {
           "slug": "mcp-builder",
