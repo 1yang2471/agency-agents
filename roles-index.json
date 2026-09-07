@@ -1,8 +1,8 @@
 {
   "_note": "自动生成：由 sync.ps1 从上游 msitarzewski/agency-agents 重建，勿手改。中文名/简介由 zh-overrides.json 覆盖提供。",
   "source": "https://github.com/msitarzewski/agency-agents",
-  "last_updated": "2026-08-31",
-  "upstream_sha": "3c9588880b7cafaec325a104899fd8bbe27e7d72",
+  "last_updated": "2026-09-07",
+  "upstream_sha": "647c8baa42b6842afb4a97bf2c0950d45ba88e8b",
   "divisions": {
     "academic": {
       "label": "Academic",
@@ -171,7 +171,7 @@
         {
           "slug": "developer-tooling-engineer",
           "name": "Developer Tooling Engineer",
-          "brief": "Expert developer-tooling and CLI engineer — building command-line tools and internal developer platf"
+          "brief": "\"Expert developer-tooling and CLI engineer — building command-line tools and internal developer plat"
         },
         {
           "slug": "devops-automator",
