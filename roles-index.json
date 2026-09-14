@@ -1,8 +1,8 @@
 {
   "_note": "自动生成：由 sync.ps1 从上游 msitarzewski/agency-agents 重建，勿手改。中文名/简介由 zh-overrides.json 覆盖提供。",
   "source": "https://github.com/msitarzewski/agency-agents",
-  "last_updated": "2026-09-07",
-  "upstream_sha": "647c8baa42b6842afb4a97bf2c0950d45ba88e8b",
+  "last_updated": "2026-09-14",
+  "upstream_sha": "ad9264e309bd5e5422c04784372d7841b1e5d604",
   "divisions": {
     "academic": {
       "label": "Academic",
@@ -119,6 +119,11 @@
           "brief": "Expert API platform engineer for public and partner APIs — contract-first design (OpenAPI/gRPC), ver"
         },
         {
+          "slug": "ats-validator-architect",
+          "name": "ATS Validator Architect",
+          "brief": "Architect and validator for Applicant Tracking Systems (ATS) and resume parsers. Combines determinis"
+        },
+        {
           "slug": "autonomous-optimization-architect",
           "name": "Autonomous Optimization Architect",
           "brief": "Intelligent system governor that continuously shadow-tests APIs for performance while enforcing stri"
@@ -127,6 +132,11 @@
           "slug": "backend-architect",
           "name": "后端架构师",
           "brief": "负责 API 设计、数据流与服务边界"
+        },
+        {
+          "slug": "china-network-engineer",
+          "name": "China Network Engineer",
+          "brief": "Expert in mainland China's mainstream enterprise networking stacks — Huawei VRP, H3C Comware, Ruijie"
         },
         {
           "slug": "cms-developer",
@@ -299,6 +309,16 @@
           "brief": "Expert payments engineer for PSP integrations (Stripe, Adyen, Braintree, PayPal), idempotent payment"
         },
         {
+          "slug": "pdf-engine-architect",
+          "name": "PDF Engine Architect",
+          "brief": "Architect and specialist in deterministic HTML-to-PDF document compilation, Playwright browser conte"
+        },
+        {
+          "slug": "platform-engineer",
+          "name": "Platform Engineer",
+          "brief": "Expert internal developer platform (IDP) engineer specializing in golden paths, paved roads, and sel"
+        },
+        {
           "slug": "privacy-engineer",
           "name": "Privacy Engineer",
           "brief": "Expert privacy engineer who implements privacy in code — PII discovery and classification, data mini"
@@ -362,6 +382,11 @@
           "slug": "technical-writer",
           "name": "技术文档工程师",
           "brief": "负责技术文档、说明与使用手册编写"
+        },
+        {
+          "slug": "universal-document-compiler",
+          "name": "Universal Document Compiler",
+          "brief": "Architect of schema-agnostic document ASTs, algorithmic data-shape layout inference, bidirectional C"
         },
         {
           "slug": "uswds-developer",
@@ -1143,6 +1168,11 @@
           "slug": "fedramp-rmf-compliance-engineer",
           "name": "FedRAMP & RMF Compliance Engineer",
           "brief": "Expert FedRAMP and NIST Risk Management Framework compliance engineer specializing in both FedRAMP a"
+        },
+        {
+          "slug": "focus-music-architect",
+          "name": "Focus Music Architect",
+          "brief": "Instrumental focus music specialist and neuroacoustic prompt engineer — crafts high-yield prompts, s"
         },
         {
           "slug": "french-consulting-market-navigator",
