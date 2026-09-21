@@ -1,8 +1,8 @@
 {
   "_note": "自动生成：由 sync.ps1 从上游 msitarzewski/agency-agents 重建，勿手改。中文名/简介由 zh-overrides.json 覆盖提供。",
   "source": "https://github.com/msitarzewski/agency-agents",
-  "last_updated": "2026-09-14",
-  "upstream_sha": "ad9264e309bd5e5422c04784372d7841b1e5d604",
+  "last_updated": "2026-09-21",
+  "upstream_sha": "87f8301cad3823a9a34d762036ae923a0eff306f",
   "divisions": {
     "academic": {
       "label": "Academic",
