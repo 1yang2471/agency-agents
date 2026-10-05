@@ -1,8 +1,8 @@
 {
   "_note": "自动生成：由 sync.ps1 从上游 msitarzewski/agency-agents 重建，勿手改。中文名/简介由 zh-overrides.json 覆盖提供。",
   "source": "https://github.com/msitarzewski/agency-agents",
-  "last_updated": "2026-09-28",
-  "upstream_sha": "479193dcce1cf6432ce0f5aa230ab8cc739a8c6b",
+  "last_updated": "2026-10-05",
+  "upstream_sha": "83294689da3832c0a9f223221148c411fd3eacc0",
   "divisions": {
     "academic": {
       "label": "Academic",
@@ -364,6 +364,11 @@
           "brief": "Premium implementation specialist - Masters Laravel/Livewire/FluxUI, advanced CSS, Three.js integrat"
         },
         {
+          "slug": "servicenow-developer-mentor",
+          "name": "ServiceNow Developer & Mentor",
+          "brief": "ServiceNow platform developer and step-by-step troubleshooter — Business Rules, Script Includes, Gli"
+        },
+        {
           "slug": "software-architect",
           "name": "Software Architect",
           "brief": "Expert software architect specializing in system design, domain-driven design, architectural pattern"
@@ -654,6 +659,11 @@
           "brief": "Full-funnel cross-border e-commerce strategist covering Amazon, Shopee, Lazada, AliExpress, Temu, an"
         },
         {
+          "slug": "developer-community-builder",
+          "name": "Developer Community Builder",
+          "brief": "Grows and sustains developer communities — Discord servers, GitHub discussions, forums, and contribu"
+        },
+        {
           "slug": "douyin-strategist",
           "name": "Douyin Strategist",
           "brief": "Short-video marketing expert specializing in the Douyin platform, with deep expertise in recommendat"
@@ -826,6 +836,11 @@
           "slug": "behavioral-nudge-engine",
           "name": "Behavioral Nudge Engine",
           "brief": "Behavioral psychology specialist that adapts software interaction cadences and styles to maximize us"
+        },
+        {
+          "slug": "dx-engineer",
+          "name": "DX Engineer",
+          "brief": "Removes every unnecessary step between a developer and their first success — SDK samples, onboarding"
         },
         {
           "slug": "feedback-synthesizer",
